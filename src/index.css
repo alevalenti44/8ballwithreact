@@ -1,0 +1,59 @@
+body {
+  overflow:hidden;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display:flex;
+  flex-direction:column;
+  background-image: linear-gradient(-90deg, #3187CB, #A668BE);
+}
+
+h1{
+  color: white;
+}
+
+.eight-ball {
+  background:radial-gradient(farthest-corner at 15px 15px, #333, #000);
+  width:500px;
+  height:500px;
+  border-radius:50%;
+  margin:auto;
+  display:flex;
+
+}
+
+
+.viewer{
+  border-radius:50%;
+  margin:auto;
+  height:250px;
+  width:250px;
+  background:radial-gradient(farthest-corner at 15px 15px, #333, #140326);
+  box-shadow: 2px 2px #888888;
+  display: table;
+}
+
+.inputGroup{
+  height:50px;
+  width:300px;
+}
+.inputButton{
+  width:50px;
+
+}
+
+.userAnswerTextBox{
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
+
+.eightBallOuterDiv{
+    background:radial-gradient(farthest-corner at 15px 15px, #333, #000);
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+}
