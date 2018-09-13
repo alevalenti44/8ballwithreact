@@ -1,4 +1,6 @@
 # Digital Fortune Telling 8 ball
+
+![alt text](https://github.com/alevalenti44/8ballwithreact/blob/master/8ball.gif)
 ### Ever wanted to relive the nostalgia that those magic 8 balls gave you? Good news! Now you can!
 ## How it works:
 
