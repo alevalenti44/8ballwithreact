@@ -40,6 +40,7 @@ class Main extends React.Component {
     };
 
     getReply = () => {
+
         if (this.state.userQuestion.length > 1) {
             let randomNum = Math.floor(Math.random() * 19) + 1;
             let reply = this.state.answers[randomNum];
@@ -48,28 +49,33 @@ class Main extends React.Component {
                 userOutcome: reply,
                 clicked: true,
             });
+
             console.log('is clicked?' + this.state.clicked);
-            setInterval(() => {
+
+            setTimeout(() => {
                 this.setState({ clicked: false, userQuestion: '' });
             }, 4000);
+
         } else {
             this.setState({
                 errorStyle: (
                     <p style={{
-                            color: 'red',
-                            fontSize: 15,
-                            display: 'flex',
-                            marginTop: 10,
-                            justifyContent: 'center',
-                        }}>
+                        color: 'red',
+                        fontSize: 15,
+                        display: 'flex',
+                        marginTop: 10,
+                        justifyContent: 'center',
+                    }}>
                         Question Is Required{' '}
                     </p>
                 ),
             });
         }
-        setInterval(() => {
+
+        setTimeout(() => {
             this.setState({ errorStyle: '' });
         }, 3000);
+
     };
 
     render() {
